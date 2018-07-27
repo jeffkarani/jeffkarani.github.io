@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeff Profile</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">e
+  <style type="text/css">
+    body{
+    font:Helvetica;
+    font-size: 12pt;
+    line-height: 1.8;
+    color: #000000;
+    margin: 0 8px;
+    
+    }
+    #myimage{
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+    }
+    .myContent{
+    text-decoration: none; 
+      font:Helvetica;
+    font-size: 12pt;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+    }
+  </style>
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<nav class="navbar navbar-default navabar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Logo</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					 <li><a href="#about">HOME</a></li>
+				     <li><a href="#">PROJECTS</a></li>
+				     <li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="jumbotron text-center">
+		<h2>About Jeff</h2>
+    <div class="row">
+        <div class="col-sm-5">
+    <img id="myimage" src="http://t4d.co.ke/elearning/wp-content/uploads/2018/05/tutor1-370x370.jpg">
+    <br> <br>
+    <p><span>Jeff Karani</span></p>
+  </div>
+  <div class="col-sm-7">
+    <div class="myContent">
+      <p clas="text-left">Research, mapping and analysis expert.</p>
+
+      
+    </div>
+</div>
+</div>
+	        
+	</div>
+		<!--GRID Container-->
+		<div id="pricing" class="carousel-fluid">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h3>Data Collection</h3>
+						</div>
+						<div class="panel-body">
+							<p>A mobile data collection implemeter in ODK, KoboToolbox, CSPro for Android, survey CTO, Open HDS and other data collectin tools</p>
+						</div>
+					</div>
+				</div>
+        <div class="col-sm-4">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h3>Training</h3>
+            </div>
+            <div class="panel-body">
+              <p>Trainer in mobile data colletion toos and technologies</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h3>Data Annalysis</h3>
+            </div>
+            <div class="panel-body">
+               <p>Data analysis using advanced excel,SPSS, Stata and R</p>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+
+	</div>
+	<footer class="container-fluid text-center">
+		
+		    <p>This file was prepared by Jeff<a href="#myPage" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		    </a></p>
+	</footer>
+
+
+</body>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script> 
+</html>
